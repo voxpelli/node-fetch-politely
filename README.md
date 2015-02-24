@@ -38,7 +38,7 @@ fetchInstance.requestSlot('http://foo.example.org/interesting/content/');
 ### Options
 
 * **throttleDuration** – for how long in milliseconds to throttle requests to each `hostname`. Defaults to `10` seconds.
-* **returnContent** – whether to fetch and return the content with the callback when a URL has received a request slot.
+* **returnContent** – whether to fetch and return the content with the callback when a URL has received a request slot. Defaults to `false`.
 * **log** – a logger function. Defaults to `console.log()`.
 * **lookup** – an object that keeps track of throttled hosts and queued URL:s. Defaults to `PoliteLookup`.
 * **allowed** – a function that checks whether a URL is allowed to be fetched. Defaults to `PoliteRobot.allowed()`.
