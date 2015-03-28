@@ -18,7 +18,8 @@
     "lru-cache": "^2.5.0",
     "promise": "^5.0.0",
     "request": "^2.51.0",
-    "robots": "^0.9.4"
+    "robots": "^0.9.4",
+    "verror": "^1.6.0"
   },
   "engines": {
     "node": "0.10.x"
