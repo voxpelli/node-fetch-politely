@@ -23,7 +23,7 @@
   "engines": {
     "node": "0.10.x"
   },
-  "main": "./lib/fetch.js",
+  "main": "./lib/main.js",
   "directories": {
     "example": "./example",
     "lib": "./lib"
