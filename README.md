@@ -95,7 +95,7 @@ Pull Requests are welcome if someone wants to pull out the Knex-dependency. Most
 
 ### lookupOptions
 
-* **knex** – **required** – the database connection to use, provided through a [Knex](http://knexjs.org/) object.
+* **knex** – *required* – the database connection to use, provided through a [Knex](http://knexjs.org/) object.
 * **purgeWindow** – the minimum interval in milliseconds between two host purges. Defaults to `500` ms.
 * **concurrentReleases** – how many parallell database lookups to perform to check for released URL:s. Defaults to `2`.
 * **releasesPerBatch** – how many URL:s to fetch in each database lookup. Defaults to `5`.
