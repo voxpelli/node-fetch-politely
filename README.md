@@ -39,8 +39,7 @@ fetchInstance.requestSlot('http://foo.example.org/interesting/content/');
 
 * **throttleDuration** – for how long in milliseconds to throttle requests to each `hostname`. Defaults to `10` seconds.
 * **returnContent** – whether to fetch and return the content with the callback when a URL has received a request slot. Defaults to `false`.
-* **log** – a logger function. Defaults to `console.log()`.
-* **debug** – a debug-level logger function. Defaults to `function () {}`.
+* **logger** – a [Bunyan](https://github.com/trentm/node-bunyan) compatible logger library. Defaults to [bunyan-duckling](https://github.com/bloglovin/node-bunyan-duckling) which uses `console.log()`/`.error()`.
 * **lookup** – an object or class that keeps track of throttled hosts and queued URL:s. Defaults to `PoliteLookup`.
 * **lookupOptions** – an object that defines extra lookup options.
 * **allowed** – a function that checks whether a URL is allowed to be fetched. Defaults to `PoliteRobot.allowed()`.
