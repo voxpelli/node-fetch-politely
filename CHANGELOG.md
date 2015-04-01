@@ -1,3 +1,11 @@
+### 0.3.1 (2015-04-01)
+
+
+#### Bug Fixes
+
+* **logging:** default to ”debug”-level logging ([060954c6](http://github.com/voxpelli/node-fetch-politely/commit/060954c6574a07fd41c0f0aff42ffdd8132a475c))
+
+
 ## 0.3.0 (2015-04-01)
 
 
