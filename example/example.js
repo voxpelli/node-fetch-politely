@@ -43,3 +43,9 @@ polite.requestSlot(
 
 // Unallowed fetch
 polite.requestSlot('http://google.se/search/123');
+
+
+// Trigger flood warnings
+// for (var i = 0; i < 1000; i++) {
+//   polite.requestSlot('http://example.com/' + i);
+// }
