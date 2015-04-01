@@ -1,3 +1,24 @@
+## 0.3.0 (2015-04-01)
+
+
+#### Bug Fixes
+
+* **dependencies:** updated Promise to 6.x.x ([1627d83a](http://github.com/voxpelli/node-fetch-politely/commit/1627d83a38f58edeae1ecec3cf9faa10452510bb))
+
+
+#### Features
+
+* **logging:**
+  * warn on large throttle queues ([4ece841e](http://github.com/voxpelli/node-fetch-politely/commit/4ece841ed63f4a6aee09dfb58207c5b1f0fc713f))
+  * moved to Bunyan-compatible logger ([28211718](http://github.com/voxpelli/node-fetch-politely/commit/2821171833fe8c2df1962a58fc95bb3a7ca17075))
+
+
+#### Breaking Changes
+
+* New option, ”logger”, for specifying which logger to use, the old ”log” option has been removed
+ ([28211718](http://github.com/voxpelli/node-fetch-politely/commit/2821171833fe8c2df1962a58fc95bb3a7ca17075))
+
+
 ## 0.2.0 (2015-03-28)
 
 
