@@ -7,7 +7,7 @@ var start = Date.now();
 
 var FetchPolitely = require('../');
 var polite = new FetchPolitely(function (err, url, message, result) {
-  console.log('Callback', Math.round((Date.now() - start)/1000), 'seconds after start:', err, url, message, result ? result.length : undefined);
+  console.log('Callback', Math.round((Date.now() - start) / 1000), 'seconds after start:', err, url, message, result ? result.length : undefined);
   if (err) {
     console.log(err.stack);
   }
