@@ -3,6 +3,8 @@
 
 'use strict';
 
+var Promise = require('promise');
+
 var start = Date.now();
 
 var FetchPolitely = require('../');
@@ -16,6 +18,11 @@ var polite = new FetchPolitely(function (err, url, message, result) {
   userAgent: 'Fetch-Politely/dev',
   returnContent: true,
   log: function () {},
+  lookupOptions: {
+    throttleDurationHost: function (hostname) {
+      return Promise.resolve(hostname === 'example.com' ? 500 : undefined);
+    },
+  }
 });
 
 polite.requestSlot('http://example.com/');
