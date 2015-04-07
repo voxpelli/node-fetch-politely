@@ -1,3 +1,19 @@
+## 0.4.0 (2015-04-07)
+
+
+#### Bug Fixes
+
+* **logging:**
+  * improved flood check interval ([3f77945a](http://github.com/voxpelli/node-fetch-politely/commit/3f77945ad3ca0c6eeee62ee599807aa76645524d))
+  * lower warning threshold ([72851872](http://github.com/voxpelli/node-fetch-politely/commit/7285187222812877954c4f24bddc2d31b56ddec8))
+  * properly filter flooded hostnames ([6dded0e2](http://github.com/voxpelli/node-fetch-politely/commit/6dded0e2a181c4bebbb6bb16275873e8ae6ec58a))
+
+
+#### Features
+
+* **robot:** cache limit option ([daeb9033](http://github.com/voxpelli/node-fetch-politely/commit/daeb90333c7fb60d9340a8b2f18e3c3afa9ffa07))
+
+
 ### 0.3.1 (2015-04-01)
 
 
