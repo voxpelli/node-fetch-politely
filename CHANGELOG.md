@@ -1,3 +1,11 @@
+## 0.5.0 (2015-04-08)
+
+
+#### Features
+
+* **lookup:** individual hostname throttle levels ([522f7a5a](http://github.com/voxpelli/node-fetch-politely/commit/522f7a5a14dde7f56841d280f9600cb6da45de3d))
+
+
 ## 0.4.0 (2015-04-07)
 
 
