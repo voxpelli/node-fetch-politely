@@ -29,6 +29,10 @@ polite.requestSlot('http://example.com/');
 polite.requestSlot('http://example.com/');
 polite.requestSlot('http://example.com/');
 polite.requestSlot('http://example.com/');
+polite.requestSlot('http://example.com/');
+polite.requestSlot('http://example.com/');
+polite.requestSlot('http://example.com/');
+polite.requestSlot('http://example.com/');
 
 polite.requestSlot('http://voxpelli.com/');
 polite.requestSlot(
