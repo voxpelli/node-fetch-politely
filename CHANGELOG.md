@@ -1,3 +1,16 @@
+## 0.6.0 (2015-04-10)
+
+
+#### Bug Fixes
+
+* **main:** set maxSockets to Infinity for requests ([89975bab](http://github.com/voxpelli/node-fetch-politely/commit/89975bab998d92c83c9e6ae84d6a976a7b544b5e))
+
+
+#### Features
+
+* **robot:** set a fixed timeout limit ([f1ebacd6](http://github.com/voxpelli/node-fetch-politely/commit/f1ebacd6f15cc1ba1ed60b09533ca894fc2ccccf))
+
+
 ## 0.5.0 (2015-04-08)
 
 
