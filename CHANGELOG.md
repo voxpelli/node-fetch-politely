@@ -1,3 +1,14 @@
+### 0.6.1 (2015-04-16)
+
+
+#### Bug Fixes
+
+* **main:**
+  * don’t return any value in requestSlot() ([9d55308e](http://github.com/voxpelli/node-fetch-politely/commit/9d55308e4d7bce0110d094d6191c981f7e9b3692))
+  * should wait for queueing ([d2d177df](http://github.com/voxpelli/node-fetch-politely/commit/d2d177df5b77575fa2b3447051cebfc145ade1ff))
+* **robot:** use synchronous resolving ([e1aba02a](http://github.com/voxpelli/node-fetch-politely/commit/e1aba02aa48d636b2d3501079a48746813ca322c))
+
+
 ## 0.6.0 (2015-04-10)
 
 
