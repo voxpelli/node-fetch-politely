@@ -1,3 +1,11 @@
+## 0.7.0 (2015-04-21)
+
+
+#### Features
+
+* **robot:** improved pool handling ([af48a1a9](http://github.com/voxpelli/node-fetch-politely/commit/af48a1a95e07c3333e7238e351fb832ea486f098))
+
+
 ### 0.6.2 (2015-04-16)
 
 
