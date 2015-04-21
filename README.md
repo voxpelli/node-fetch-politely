@@ -44,6 +44,8 @@ fetchInstance.requestSlot('http://foo.example.org/interesting/content/');
 * **lookupOptions** – an object that defines extra lookup options.
 * **allowed** – a function that checks whether a URL is allowed to be fetched. Defaults to `PoliteRobot.allowed()`.
 * **robotCache** – a cache method used by `PoliteRobot` to cache fetched `robots.txt`. Defaults to wrapped [lru-cache](https://www.npmjs.com/package/lru-cache).
+* **robotCacheLimit** – a limit of the number of items to keep in the default lru-cache of `PoliteRobot`.
+* **robotPool** – an HTTP agent to use for the request-library of `PoliteRobot`.
 * **userAgent** – _required_ by `PoliteRobot` and `options.returnContent`. The [User Agent](http://en.wikipedia.org/wiki/User_agent) to use for HTTP requests.
 
 ### Methods
