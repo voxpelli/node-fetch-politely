@@ -1,7 +1,5 @@
 'use strict';
 
-var Promise = require('promise');
-
 var start = Date.now();
 
 var FetchPolitely = require('../');
