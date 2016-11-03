@@ -31,15 +31,17 @@
     "lib": "./lib"
   },
   "scripts": {
-    "test": "node -e \"require('grunt').tasks(['test']);\"",
-    "test-all": "node -e \"require('grunt').tasks(['test-all']);\"",
+    "dependency-check": "JS_FILES=\"example/*.js lib/*.js\" && dependency-check . $JS_FILES && dependency-check . $JS_FILES --unused --no-dev",
+    "test": "eslint . && npm run dependency-check",
     "prepush": "npm test"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "husky": "^0.6.2",
-    "istanbul": "^0.3.4",
-    "lintlovin": "^1.8.0",
-    "mocha": "^2.0.1"
+    "dependency-check": "^2.5.2",
+    "eslint": "^3.4.0",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "husky": "~0.11.4"
   }
 }
