@@ -12,7 +12,7 @@ var polite = new FetchPolitely(function (err, url, message, result) {
   throttleDuration: 5000,
   userAgent: 'Fetch-Politely/dev',
   returnContent: true,
-  log: function () {},
+  logger: require('bunyan-adaptor')(),
   lookupOptions: {
     throttleDurationHost: function (hostname) {
       return Promise.resolve(hostname === 'example.com' ? 500 : undefined);

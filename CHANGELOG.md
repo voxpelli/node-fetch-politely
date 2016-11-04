@@ -1,3 +1,7 @@
+## 1.0.1 (2016-11-04)
+
+* **Logging:** By default now doesn't log any debug-level log items
+
 ## 1.0.0 (2016-11-04)
 
 * **Breaking:** Now requires at least Node.js 4.x
