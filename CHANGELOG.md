@@ -1,3 +1,7 @@
+## 1.1.0 (2016-11-04)
+
+* **Feature:** PolitePGLookup now has a `onlyDeduplicateMessages` option to instruct it to deduplicate things differently
+
 ## 1.0.1 (2016-11-04)
 
 * **Logging:** By default now doesn't log any debug-level log items
