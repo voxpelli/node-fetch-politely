@@ -1,6 +1,6 @@
 {
   "name": "fetch-politely",
-  "version": "0.7.1",
+  "version": "1.1.0",
   "description": "Ensures polite outgoing HTTP requests that respects robots.txt and aren't made too close to each other",
   "homepage": "http://github.com/voxpelli/node-fetch-politely",
   "repository": {
@@ -14,16 +14,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bunyan-duckling": "^1.0.0",
-    "lodash": "^2.4.1",
-    "lru-cache": "^2.5.0",
-    "promise": "^6.0.0",
-    "request": "2.81.0",
+    "bunyan-adaptor": "^1.1.0",
+    "lodash.isequal": "^4.4.0",
+    "lodash.pull": "^4.1.0",
+    "lru-cache": "^4.0.0",
+    "request": "^2.51.0",
     "robots": "^0.9.4",
     "verror": "^1.6.0"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">=4.0.0"
   },
   "main": "./lib/main.js",
   "directories": {
@@ -31,15 +31,20 @@
     "lib": "./lib"
   },
   "scripts": {
-    "test": "node -e \"require('grunt').tasks(['test']);\"",
-    "test-all": "node -e \"require('grunt').tasks(['test-all']);\"",
+    "dependency-check": "JS_FILES=\"example/*.js lib/*.js\" && dependency-check . $JS_FILES && dependency-check . $JS_FILES --unused --no-dev",
+    "test": "installed-check -e . && eslint . && npm run dependency-check",
     "prepush": "npm test"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "husky": "^0.6.2",
-    "istanbul": "^0.3.4",
-    "lintlovin": "^1.8.0",
-    "mocha": "^2.0.1"
+    "dependency-check": "^2.5.2",
+    "eslint": "^3.4.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "installed-check": "^2.1.1"
   }
 }

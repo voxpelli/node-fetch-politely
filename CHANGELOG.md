@@ -1,3 +1,19 @@
+## 1.1.0 (2016-11-04)
+
+* **Feature:** PolitePGLookup now has a `onlyDeduplicateMessages` option to instruct it to deduplicate things differently
+
+## 1.0.1 (2016-11-04)
+
+* **Logging:** By default now doesn't log any debug-level log items
+
+## 1.0.0 (2016-11-04)
+
+* **Breaking:** Now requires at least Node.js 4.x
+* **Dependencies:** Dropped the Promise polyfill
+* **Dependencies:** Moved away from full lodash 2.x, mostly to ES6 methods
+* **Dependencies:** Updated LRU Cache
+* **Dev dependencies:** Moved away from a Grunt-based setup to a npm script, semistandard-based one
+
 ## 0.7.0 (2015-04-21)
 
 
@@ -114,4 +130,3 @@
   * added a debug options ([099ff456](http://github.com/voxpelli/node-fetch-politely/commit/099ff456fdeb44d807570f0cb43ab6a04cdb2b1b))
   * add a closing method ([6a34156a](http://github.com/voxpelli/node-fetch-politely/commit/6a34156a9254291dcf26ff6f332a7bbad4466deb))
   * option to disable allow-checks ([893ad429](http://github.com/voxpelli/node-fetch-politely/commit/893ad429eaf444510cc45e3e9e87d1e2e8c4ac9c))
-

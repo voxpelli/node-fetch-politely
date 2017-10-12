@@ -1,5 +1,9 @@
 # Fetch Politely
 
+[![Build Status](https://travis-ci.org/voxpelli/node-fetch-politely.svg?branch=master)](https://travis-ci.org/voxpelli/node-fetch-politely)
+[![Dependency Status](https://gemnasium.com/voxpelli/node-fetch-politely.svg)](https://gemnasium.com/voxpelli/node-fetch-politely)
+[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat)](https://github.com/Flet/semistandard)
+
 A library for ensuring polite outgoing HTTP requests that respect robots.txt and aren't made too close to each other
 
 ## Installation
@@ -100,6 +104,7 @@ Pull Requests are welcome if someone wants to pull out the Knex-dependency. Most
 * **purgeWindow** – the minimum interval in milliseconds between two host purges. Defaults to `500` ms.
 * **concurrentReleases** – how many parallell database lookups to perform to check for released URL:s. Defaults to `2`.
 * **releasesPerBatch** – how many URL:s to fetch in each database lookup. Defaults to `5`.
+* **onlyDeduplicateMessages** – bool that if set will only deduplicate URL:s with the same message when deduplicating. Defaults to `false`.
 
 ## Lint / Test
 

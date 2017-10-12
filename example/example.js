@@ -1,9 +1,4 @@
-/*jslint node: true */
-/* global -Promise */
-
 'use strict';
-
-var Promise = require('promise');
 
 var start = Date.now();
 
@@ -17,11 +12,11 @@ var polite = new FetchPolitely(function (err, url, message, result) {
   throttleDuration: 5000,
   userAgent: 'Fetch-Politely/dev',
   returnContent: true,
-  log: function () {},
+  logger: require('bunyan-adaptor')(),
   lookupOptions: {
     throttleDurationHost: function (hostname) {
       return Promise.resolve(hostname === 'example.com' ? 500 : undefined);
-    },
+    }
   }
 });
 
@@ -51,10 +46,8 @@ polite.requestSlot(
   { allowDuplicates: false }
 );
 
-
 // Unallowed fetch
 polite.requestSlot('http://google.se/search/123');
-
 
 // Trigger flood warnings
 // for (var i = 0; i < 1000; i++) {
