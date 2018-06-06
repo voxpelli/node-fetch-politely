@@ -1,8 +1,10 @@
 # Fetch Politely
 
 [![Build Status](https://travis-ci.org/voxpelli/node-fetch-politely.svg?branch=master)](https://travis-ci.org/voxpelli/node-fetch-politely)
-[![Dependency Status](https://gemnasium.com/voxpelli/node-fetch-politely.svg)](https://gemnasium.com/voxpelli/node-fetch-politely)
+[![dependencies Status](https://david-dm.org/voxpelli/node-fetch-politely/status.svg)](https://david-dm.org/voxpelli/node-fetch-politely)
+[![Known Vulnerabilities](https://snyk.io/test/github/voxpelli/node-fetch-politely/badge.svg?targetFile=package.json)](https://snyk.io/test/github/voxpelli/node-fetch-politely?targetFile=package.json)
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat)](https://github.com/Flet/semistandard)
+
 
 A library for ensuring polite outgoing HTTP requests that respect robots.txt and aren't made too close to each other
 
