@@ -19,7 +19,7 @@
     "lodash.pull": "^4.1.0",
     "lru-cache": "^4.0.0",
     "request": "^2.51.0",
-    "robots": "^0.9.4",
+    "robots": "^0.10.0",
     "verror": "^1.6.0"
   },
   "engines": {
