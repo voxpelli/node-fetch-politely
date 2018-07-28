@@ -1,9 +1,12 @@
+// @ts-check
+/// <reference types="node" />
+
 'use strict';
 
-var start = Date.now();
+const start = Date.now();
 
-var FetchPolitely = require('../');
-var polite = new FetchPolitely(function (err, url, message, result) {
+const FetchPolitely = require('../');
+const polite = new FetchPolitely((err, url, message, result) => {
   console.log('Callback', Math.round((Date.now() - start) / 1000), 'seconds after start:', err, url, message, result ? result.length : undefined);
   if (err) {
     console.log(err.stack);
@@ -14,9 +17,7 @@ var polite = new FetchPolitely(function (err, url, message, result) {
   returnContent: true,
   logger: require('bunyan-adaptor')(),
   lookupOptions: {
-    throttleDurationHost: function (hostname) {
-      return Promise.resolve(hostname === 'example.com' ? 500 : undefined);
-    }
+    throttleDurationHost: hostname => Promise.resolve(hostname === 'example.com' ? 500 : undefined)
   }
 });
 

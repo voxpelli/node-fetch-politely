@@ -19,7 +19,7 @@ npm install fetch-politely --save
 Simple:
 
 ```javascript
-var fetchInstance = new FetchPolitely(function (err, url, message) {
+const fetchInstance = new FetchPolitely((err, url, message) => {
   if (err) { return; }
 
   // The URL has been cleared for fetching – the hostname isn't throttled and robots.txt doesn't ban it
@@ -39,7 +39,7 @@ fetchInstance.requestSlot('http://foo.example.org/interesting/content/');
 
 ### Parameters
 
-* **callback** – `function (err, url, message, [content]) {};`, called for each succesful request slot
+* **callback** – `(err, url, message, [content]) => {};`, called for each succesful request slot
 
 ### Options
 
@@ -56,7 +56,7 @@ fetchInstance.requestSlot('http://foo.example.org/interesting/content/');
 
 ### Methods
 
-* **requestSlot** – tries to reserve a request slot for a URL.
+* **requestSlot** – tries to reserve a request slot for a URL. Returns a Promise that will be resolved or rejected when the request has been made.
 
 ### Static
 
@@ -110,4 +110,4 @@ Pull Requests are welcome if someone wants to pull out the Knex-dependency. Most
 
 ## Lint / Test
 
-`npm test` or to watch, install `grunt-cli` then do `grunt watch`
+`npm test`
