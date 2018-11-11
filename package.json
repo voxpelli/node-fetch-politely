@@ -32,8 +32,12 @@
   },
   "scripts": {
     "dependency-check": "JS_FILES=\"example/*.js lib/*.js\" && dependency-check . $JS_FILES && dependency-check . $JS_FILES --unused --no-dev",
-    "test": "installed-check -e -i eslint . && eslint . && npm run --silent dependency-check && tsc",
-    "prepush": "npm test"
+    "test": "installed-check -e -i eslint . && eslint . && npm run --silent dependency-check && tsc"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
   },
   "devDependencies": {
     "@types/node": "^10.5.4",
@@ -45,7 +49,7 @@
     "eslint-plugin-node": "7.0.1",
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-standard": "4.0.0",
-    "husky": "0.14.3",
+    "husky": "^1.1.3",
     "installed-check": "2.2.0",
     "typescript": "3.1.6"
   }
