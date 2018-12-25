@@ -1,6 +1,6 @@
 {
   "name": "fetch-politely",
-  "version": "2.0.0-2",
+  "version": "2.0.0-3",
   "description": "Ensures polite outgoing HTTP requests that respects robots.txt and aren't made too close to each other",
   "homepage": "http://github.com/voxpelli/node-fetch-politely",
   "repository": {
