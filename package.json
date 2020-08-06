@@ -32,7 +32,7 @@
     "lib": "./lib"
   },
   "scripts": {
-    "check:dependency-check": "dependency-check 'lib/**/*.js' 'example/**/*.js' --no-dev -i @types/* -i type-fest",
+    "check:dependency-check": "dependency-check ./package.json 'lib/**/*.js' 'example/**/*.js' --no-dev -i @types/* -i type-fest",
     "check:installed-check": "installed-check -i eslint",
     "check:lint": "eslint .",
     "check:tsc": "tsc",
