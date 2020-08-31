@@ -17,7 +17,7 @@
     "bunyan-adaptor": "^4.0.1",
     "lodash.isequal": "^4.4.0",
     "lodash.pull": "^4.1.0",
-    "lru-cache": "^4.0.0",
+    "lru-cache": "^6.0.0",
     "request": "^2.87.0",
     "robots": "^0.10.0",
     "type-fest": "^0.16.0",
