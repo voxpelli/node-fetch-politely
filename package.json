@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bunyan-adaptor": "^4.0.1",
+    "bunyan-adaptor": "^5.0.0",
     "lodash.isequal": "^4.4.0",
     "lodash.pull": "^4.1.0",
     "lru-cache": "^4.0.0",
