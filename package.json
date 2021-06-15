@@ -20,7 +20,7 @@
     "lru-cache": "^4.0.0",
     "request": "^2.87.0",
     "robots": "^0.10.0",
-    "type-fest": "^0.16.0",
+    "type-fest": "^0.21.0",
     "verror": "^1.6.0"
   },
   "engines": {
@@ -48,7 +48,7 @@
     "@types/lodash.isequal": "^4.5.5",
     "@types/lodash.pull": "^4.1.6",
     "@types/lru-cache": "^4.1.2",
-    "@types/node": "^12.0.0",
+    "@types/node": "^12.20.15",
     "@types/request": "^2.48.5",
     "@types/verror": "^1.10.4",
     "@voxpelli/eslint-config": "4.0.0",
